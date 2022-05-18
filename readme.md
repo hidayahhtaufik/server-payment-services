@@ -16,7 +16,7 @@
 9. Run the project by executing
     ```
     npm run start
-    `
+    ```
 10. We must create data seed to database, press CTR+C to stop current Nodejs running process, after that run ```npx sequelize-cli db:seed:all``` This will fill tables with some dumy datas Organization and Member
 11. When table Organizations and Members have dumy data then we can run Test Driven Development of this project using ```npm run test```
 
