@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
-    "dev": "nodemon index.js",
+    "start": "node ./bin/www",
     "test": "DEBUG=server:debug NODE_ENV=test mocha --require babel-core/register --reporter spec --exit   test/ "
   },
   "dependencies": {
