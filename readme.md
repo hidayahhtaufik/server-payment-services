@@ -1,15 +1,24 @@
-# Readme
-## How to run the project
-Here is the step to run the project.
+# Server Payment Services
 
-- Get the source from Git repository ```git clone https://github.com/hidayahhtaufik/server-payment-services.git```
-- Enter to directory ```cd server-payment-services ```
-- Install dependencies ```npm install```
-- Run Docker build ```docker build -t .```
-- Run Docker compose ``` docker-compose up -d```
-- Open new terminal with same working directory, then you can run this NodeJS project using development mode ```npm run start```
-- We must create data seed to database, press CTR+C to stop current Nodejs running process, after that run ```npx sequelize-cli db:seed:all``` This will fill tables with some dumy datas Organization and Member
-- When table Organizations and Members have dumy data then we can run Test Driven Development of this project using ```npm run test```
+## Prerequisites
+1. Node v16.14.2
+
+## How to Run in local
+1. Install [Nodejs](https://nodejs.org/en/)
+2. Clone this project
+3. Inside home folder (`/server-payment-services`), make a new file `.env`
+4. Copy-and-paste all values from `.example.env` into `.env`
+    * Make sure to adjust all values with your own local setting (e.g. port number)
+5. Open terminal, and go to `/server-payment-services` location
+6. Install dependencies ```npm install```
+7. Run Docker build ```docker build -t .```
+8. Run Docker compose ``` docker-compose up -d```
+9. Run the project by executing
+    ```
+    npm start
+    `
+10. We must create data seed to database, press CTR+C to stop current Nodejs running process, after that run ```npx sequelize-cli db:seed:all``` This will fill tables with some dumy datas Organization and Member
+11. When table Organizations and Members have dumy data then we can run Test Driven Development of this project using ```npm run test```
 
 ## Stack of this project
 
